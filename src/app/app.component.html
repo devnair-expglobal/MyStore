@@ -1,141 +1,120 @@
 <!-- <h1>My Store</h1> -->
-
-<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-  <!-- Navbar content -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-  <a class="navbar-brand" href="#">My Store</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-    <ul class="navbar-nav ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">My Cart <span class="sr-only">(current)</span></a>
-      </li>
-      <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li> -->
-      <li class="nav-item dropdown ">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          CheckOut
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
-    </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-  </div>
-  <!-- </nav> -->
-</nav>
+<app-header></app-header>
 <!-- <div class="container" style="border: 1px solid black"> -->
+
 <div class="container wrapper">
-  <input type="text" class="form-control form-control-lg" placeholder="Search Here">
+  
+  <app-search></app-search>
+
   <div class="row mt-4">
 
-    <div class="col-4 wrapper  d-flex align-items-stretch">
-      <div class="card">
-        <img
-          src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1559244390-best-toys-2019-walking-buzz-1559244376.jpg"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
+    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
+    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
+    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
+    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
 
-        </div>
-      </div>
-
-    </div>
-
-    <div class="col-4 wrapper d-flex align-items-stretch">
-      <div class="card">
-        <img
-          src="https://www.thetoyshop.com/medias/539067-Primary-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMTI2OTJ8aW1hZ2UvcG5nfGltYWdlcy9oNzUvaGQ1LzkxNzAyMzMxOTY1NzQucG5nfDA3NGQzMTUzOWQxYzM0MWFhMDgxZWUyYzFjZjQ0NWU5NTY1ZTc1MmYwNGEwMzI5MzAzZjU4YWY1MzMzOGU4NWI"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="col-4 wrapper">
-      <div class="card">
-        <img src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512836" class="card-img-top"
-          alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-    </div>
-    <div class="col-4 wrapper">
-      <div class="card">
-        <img
-          src="https://target.scene7.com/is/image/Target/GUEST_ece962e0-6414-4820-acce-eefc60b12756?wid=488&hei=488&fmt=pjpeg"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4 wrapper">
-      <div class="card">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqr2OLKXuT0_H4wjeyqc5-kfs6-J5A4gzIB2qtkSL5jqtIf7qKA"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4 wrapper">
-      <div class="card">
-        <img
-          src="https://s7d9.scene7.com/is/image/DisneyStoreES/461010086055?$sdMedium$&defaultImage=no%20image-image_uk"
-          class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 
 <footer class="card-footer mt-4">
   <p class="text-muted text-right">&copy;MyStore</p>
 </footer>
-<!-- <nav class="navbar navbar-light bg-light d-flex justify-content-center">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-  </form>
-</nav> -->
+
+<!-- 
+<div class="col-4 wrapper  d-flex align-items-stretch">
+
+    <div class="card">
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1559244390-best-toys-2019-walking-buzz-1559244376.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>          
+        <a href="#" class="btn btn-primary  pull-right">View Details</a>          
+      </div>
+    </div>
+
+  
+
+  <div class="col-4 wrapper d-flex align-items-stretch">
+    <div class="card">
+      <img
+        src="https://www.thetoyshop.com/medias/539067-Primary-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMTI2OTJ8aW1hZ2UvcG5nfGltYWdlcy9oNzUvaGQ1LzkxNzAyMzMxOTY1NzQucG5nfDA3NGQzMTUzOWQxYzM0MWFhMDgxZWUyYzFjZjQ0NWU5NTY1ZTc1MmYwNGEwMzI5MzAzZjU4YWY1MzMzOGU4NWI"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary  pull-right">View Details</a>          
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-4 wrapper">
+    <div class="card">
+      <img src="https://cdn-ssl.s7.disneystore.com/is/image/DisneyShopping/6101036512836" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary  pull-right">View Details</a>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-4 wrapper">
+    <div class="card">
+      <img
+        src="https://target.scene7.com/is/image/Target/GUEST_ece962e0-6414-4820-acce-eefc60b12756?wid=488&hei=488&fmt=pjpeg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary  pull-right">View Details</a>          
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4 wrapper">
+    <div class="card">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOqr2OLKXuT0_H4wjeyqc5-kfs6-J5A4gzIB2qtkSL5jqtIf7qKA"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary  pull-right">View Details</a>          
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4 wrapper">
+    <div class="card">
+      <img
+        src="https://s7d9.scene7.com/is/image/DisneyStoreES/461010086055?$sdMedium$&defaultImage=no%20image-image_uk"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="btn btn-primary  pull-right">View Details</a>          
+
+      </div>
+    </div>    
+  </div> -->
