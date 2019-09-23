@@ -1,25 +1,10 @@
-<!-- <h1>My Store</h1> -->
 <app-header></app-header>
-<!-- <div class="container" style="border: 1px solid black"> -->
 
 <div class="container wrapper">
-  
-  <app-search></app-search>
-
-  <div class="row mt-4">
-
-    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
-    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
-    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
-    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
-    <app-product class="col-4 wrapper  d-flex align-items-stretch"> </app-product>
-
-  </div>
+  <router-outlet></router-outlet>
 </div>
 
-<footer class="card-footer mt-4">
-  <p class="text-muted text-right">&copy;MyStore</p>
-</footer>
+<app-footer></app-footer>
 
 <!-- 
 <div class="col-4 wrapper  d-flex align-items-stretch">

@@ -1,0 +1,12 @@
+<app-search></app-search>
+
+  <div class="row mt-4">
+    <!-- wrapper is not necessary instead you can use mt-4 -->
+    <!-- *ngFor="let item of items" -->
+    
+      <app-product *ngFor="let product of products" class="col-lg-4 col-md-4 col-sm-6 col-xs-12  wrapper  d-flex align-items-stretch" [prod]="product">
+      </app-product>
+      <!-- piping in angular -->
+      {{ products|json}}
+    
+  </div>

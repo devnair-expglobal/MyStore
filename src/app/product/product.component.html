@@ -1,14 +1,30 @@
-<div >
-    <div class="card">
-        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1559244390-best-toys-2019-walking-buzz-1559244376.jpg"
-            class="card-img-top" alt="...">
+<div>
+    <div class="card d-flex align-items-stretch">
+
+        <!-- one method of assigning an image -->
+        <!-- <img src={{product.image}}
+            class="card-img-top" alt="..."> -->
+
+        <!-- property binding -->
+        <img class="card-img-top" [src]="product.imageUrl" [alt]="product.alt">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary  pull-right">View Details</a>
+            <h5 class="card-title">{{ product.title |uppercase}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <!-- <div class="container d-flex justify-content-between"> -->
+            <!-- <a *ngIf="!product.isAvailable" href="#" class="btn btn-primary" (click)=addToCart()>Add to Cart</a> -->
+             <a *ngIf="product.isAvailable; else soldOut" href="#" class="btn btn-success"
+                    (click)=viewDetails()>Add to Cart</a>
+                <ng-template #soldOut><a routerLink="" class="btn btn-danger" (click)=viewDetails()>Sold Out</a>
+                </ng-template>
+            
+            <a class="btn btn-primary pull-right" (click)=gotoDetails(product.id)>View Details</a>
+            <!-- </div> -->
         </div>
     </div>
 
 </div>
+<!-- <div *ngIf="!product.isAvailable; else soldOut"> <a href="#" class="btn btn-primary"
+        (click)=viewDetails()>Add to Cart</a>
+</div> 
+<ng-template><a href="#" class="btn btn-primary" (click)=viewDetails()>Sold Out</a>
+</ng-template> -->
